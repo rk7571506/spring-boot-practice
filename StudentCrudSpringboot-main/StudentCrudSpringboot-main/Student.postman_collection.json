@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "67deeb61-2824-4263-a9fc-a9a53b639dfb",
+		"name": "Student",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Hritwik\",\r\n    \"lastName\": \"Gupta\",\r\n    \"address\": \"Indore\",\r\n    \"pincode\": 452001,\r\n    \"mobileNumber\": 9896523142,\r\n    \"email\":\"Hritwikg@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/addStudent"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n    \"firstName\": \"Hritwik\",\r\n    \"lastName\": \"Gupta\",\r\n    \"address\": \"Indore\",\r\n    \"pincode\": 452001,\r\n    \"mobileNumber\": 9896523142,\r\n    \"email\":\"Hritwikg@gmail.com\"\r\n},\r\n{\r\n    \"firstName\": \"Bhanu\",\r\n    \"lastName\": \"Prata\",\r\n    \"address\": \"Bhopal\",\r\n    \"pincode\": 452051,\r\n    \"mobileNumber\": 9896523144,\r\n    \"email\":\"bhanub@gmail.com\"\r\n}\r\n,\r\n{\r\n    \"firstName\": \"Rahul\",\r\n    \"lastName\": \"Gupta\",\r\n    \"address\": \"Hyderabad\",\r\n    \"pincode\": 452011,\r\n    \"mobileNumber\": 7896523142,\r\n    \"email\":\"rahul@gmail.com\"\r\n},{\r\n    \"firstName\": \"Sanjana\",\r\n    \"lastName\": \"Singh\",\r\n    \"address\": \"Parasia\",\r\n    \"pincode\": 480441,\r\n    \"mobileNumber\": 7796523142,\r\n    \"email\":\"sanjana@gmail.com\"\r\n}\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/addStudents"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/students"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/student/4"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Sourabh\",\r\n    \"lastName\": \"Gupta\",\r\n    \"address\": \"Indore\",\r\n    \"pincode\": 452001,\r\n    \"mobileNumber\": 9896523142,\r\n    \"email\":\"Hritwikg@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/student/1"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/student/4"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/students"
+			},
+			"response": []
+		}
+	]
+}
